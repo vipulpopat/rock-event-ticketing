@@ -26,7 +26,7 @@ Then run:
 >$ truffle migrate
 
 After the successful migration you may launch the application using lite server:
->$ npm run dev
+>$ cd client; npm start
 
 This will invoke the web app.
 
@@ -41,5 +41,5 @@ You should note that the account balance of 1,000,000 tokens is displayed.
 The application is now ready for use.
 
 A demonstration of how to use the application is available at:
-https://www.loom.com/share/8589ff3ce46648269a61135bba398a46
+https://www.loom.com/share/
 
