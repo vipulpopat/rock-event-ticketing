@@ -13,7 +13,7 @@
 - Install nodejs & npm from https://phoenixnap.com/kb/install-node-js-npm-on-windows
 - Install Ganache/Truffle suite from https://trufflesuite.com/ganache/
 - Install truffle $ npm install -g truffle
-- Clone the git repository yyyy to a locally created folder xxxx
+- Clone the git repository https://gitlab.computing.dcu.ie/popatv2/rock-event-ticketing.git to a locally created folder of your choice
 
 To compile the project run:
 >$ truffle compile
@@ -25,8 +25,12 @@ To migrate to your local development network using Ganage, ensure that you have 
 Then run:
 >$ truffle migrate
 
+After the successful migration you may Install the dependencies required by the UI
+>$ cd client
+>$ npm install
+
 After the successful migration you may launch the application using lite server:
->$ cd client; npm start
+>$ npm start
 
 This will invoke the web app.
 
