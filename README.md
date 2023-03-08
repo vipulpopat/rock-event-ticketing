@@ -40,7 +40,7 @@ Ensure both accounts are connected.
 Select the account linked to Ganache account[0].
 
 Return to the web app and refresh the page.
-You should note that the account balance of 1,000,000 tokens is displayed.
+You should note that the account balance of 100 ETH is displayed.
 The application is now ready for use.
 
 A demonstration of how to use the application is available at:
