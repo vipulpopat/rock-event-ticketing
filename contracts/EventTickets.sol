@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity >=0.4.22 <0.9.0;
+pragma solidity >=0.6.11 <0.9.0;
 
 uint256 constant TOTAL_EVENT_TICKETS = 10;
 
@@ -13,6 +13,8 @@ contract EventTickets {
 
   EventTicket[TOTAL_EVENT_TICKETS] public eventTickets;
 
+  event ticketPurchased(address buyer, uint ticketNumber);
+
   constructor() {
     for (uint256 i = 0; i < TOTAL_EVENT_TICKETS; i++) {
       eventTickets[i].price = 1e17; // 0.1 ETH
@@ -25,5 +27,6 @@ contract EventTickets {
     require(eventTickets[_index].owner == address(0x0));
     require(msg.value >= eventTickets[_index].price);
     eventTickets[_index].owner = msg.sender;
+    emit ticketPurchased(msg.sender, _index);
   }
 }
